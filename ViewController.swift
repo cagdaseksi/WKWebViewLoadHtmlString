@@ -10,9 +10,8 @@ import UIKit
 import WebKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var myWebView: WKWebView!
     
+    @IBOutlet weak var myWebView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,7 +20,7 @@ class ViewController: UIViewController {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Let's Learn Swift</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -30,7 +29,7 @@ class ViewController: UIViewController {
 </head>
 <body>
 <div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
+  <h1>Let's Learn Swift</h1>
   <p>Resize this responsive page to see the effect!</p>
 </div>
 <div class="container">
@@ -58,8 +57,14 @@ class ViewController: UIViewController {
         
         myWebView.loadHTMLString(html, baseURL: nil)
         
+        //UIWebView
+        //let webView1 = UIWebView()
+        //webView1.loadHTMLString("html code here", baseURL: nil)
+        
+        //WKWebView
+        //let webView2 = WKWebView()
+        //webView2.loadHTMLString("html code here", baseURL: nil)
+        
     }
-
-
+    
 }
-
